@@ -1,0 +1,11 @@
+.entrada {
+  height: 100vh;
+}
+
+.entrada img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}

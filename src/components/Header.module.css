@@ -1,0 +1,78 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 5.5rem;
+  transition: 0.2s;
+}
+
+.headerScrolled {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+}
+
+.headerContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menuBtn {
+  margin-right: auto;
+  height: 2rem;
+  width: 2rem;
+}
+
+.menuBtn > div {
+  width: 1.7rem;
+  height: 2px;
+  background: var(--cor-2);
+  transition: 0.3s;
+}
+
+.menuBtn > div::before,
+.menuBtn > div::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 2px;
+  background: inherit;
+}
+
+.menuBtn > div::before {
+  top: -0.5rem;
+  width: 1.9rem;
+}
+
+.menuBtn > div::after {
+  bottom: -0.4rem;
+  height: 2px;
+  width: 1.5rem;
+}
+
+.menuBtn.visible > div {
+  width: 2rem;
+  transform: rotate(-45deg);
+}
+
+.menuBtn.visible > div::after {
+  display: none;
+}
+.menuBtn.visible > div::before {
+  transform: rotate(90deg);
+  top: 0;
+  width: 2rem;
+}
+.logo {
+  color: var(--cor-2);
+  font-weight: 800;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.logo img {
+  width: 2.2rem;
+}
