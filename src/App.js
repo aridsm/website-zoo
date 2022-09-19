@@ -1,3 +1,4 @@
+import Activities from "./components/Activities";
 import Animals from "./components/Animals";
 import Entrada from "./components/Entrada";
 import Footer from "./components/Footer";
@@ -10,6 +11,7 @@ function App() {
       <Entrada />
       <main>
         <Animals />
+        <Activities />
       </main>
       <Footer />
     </div>

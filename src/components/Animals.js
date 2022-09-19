@@ -5,6 +5,7 @@ import ImgAnimal2 from "../assets/an-2.jpg";
 import ImgAnimal3 from "../assets/an-3.jpg";
 import ImgAnimal4 from "../assets/an-4.jpg";
 import ImgAnimal5 from "../assets/an-5.jpg";
+import LayoutSections from "./layout/LayoutSections";
 
 const animals = [
   {
@@ -66,29 +67,24 @@ const animals = [
 
 const Animals = () => {
   return (
-    <section className={classes.animalsContainer}>
-      <div className={classes.background}></div>
-      <div className={classes.content}>
-        <span>O que você irá encontrar aqui</span>
-        <h2>
-          Nossos <br /> animais
-        </h2>
-        <p className={classes.descricao}>
-          Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc
-          malesuada sit amet arcu id pellentesque.
-        </p>
-        <button className="btn-amarelo">Todos os animais</button>
-      </div>
+    <LayoutSections
+      className={classes.container}
+      title="Nossos animais"
+      content="Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc
+      malesuada sit amet arcu id pellentesque."
+      subtitle="O que você irá encontrar aqui"
+      buttonText="Todos os animais"
+    >
       <ul className={classes.animalsList}>
         {animals.map((animal) => (
-          <li>
+          <li key={animal.id}>
             <button>
               <img src={animal.src} alt={animal.name} />
             </button>
           </li>
         ))}
       </ul>
-    </section>
+    </LayoutSections>
   );
 };
 

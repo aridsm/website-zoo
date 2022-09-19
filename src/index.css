@@ -4,7 +4,7 @@
   --cor-1: #fdf64f;
   --cor-2: #eef1c5;
   --cor-3: #9c0c0c;
-  --cor-4: #2f6815;
+  --cor-4: #307510;
   --cor-5: #1e1f2d;
   --cor-6: #514e12;
 }
@@ -30,7 +30,9 @@ h2 {
 a {
   text-decoration: none;
 }
-
+li {
+  list-style: none;
+}
 input,
 a,
 button {
@@ -55,8 +57,24 @@ button {
 }
 .btn-amarelo:hover {
   background: #fffa68;
-  transform: translateX(0.5rem);
 }
 img {
   display: block;
+}
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-1);
+  border: 3px solid var(--cor-5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-6);
 }

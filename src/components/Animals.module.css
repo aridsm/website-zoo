@@ -1,38 +1,13 @@
-.animalsContainer {
+.container {
   background: var(--cor-1);
-  min-height: calc(100vh - 5.5rem);
-  display: flex;
 }
 
-.animalsContainer > * {
-  min-width: 50%;
-}
-
-.background {
-  background-image: url("../assets/bg.jpg");
-  mix-blend-mode: luminosity;
-  position: absolute;
-  opacity: 0.07;
-  width: 100%;
-  height: 100%;
-}
-
-.content {
-  order: 2;
-  padding: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.descricao {
-  max-width: 30rem;
-  margin: 2rem 0;
-}
-
-.content button {
+.container a {
   background: var(--cor-5);
+  color: var(--cor-1);
+}
+.container a:hover {
+  background: #242636;
   color: var(--cor-1);
 }
 
@@ -45,7 +20,6 @@
 
 .animalsList li {
   width: 100%;
-  list-style: none;
   transition: 0.2s;
 }
 

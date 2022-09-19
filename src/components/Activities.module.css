@@ -1,0 +1,22 @@
+.container {
+  background: var(--cor-3);
+  color: var(--cor-2);
+}
+
+.activitiesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  order: 2;
+}
+
+.activitiesList li,
+.activitiesList button,
+.activitiesList img {
+  width: 100%;
+  height: 100%;
+}
+
+.activitiesList img {
+  object-fit: cover;
+}
