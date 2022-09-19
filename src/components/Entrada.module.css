@@ -1,11 +1,137 @@
 .entrada {
   height: 100vh;
+  color: var(--cor-2);
+  display: flex;
 }
 
-.entrada img {
+.entrada > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  position: relative;
+  position: absolute;
   z-index: -1;
+}
+
+.logoContainer {
+  display: grid;
+  place-items: center;
+  width: 7rem;
+}
+.logo {
+  text-align: center;
+  font-weight: 800;
+  width: 100%;
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -4px;
+  top: -0.8rem;
+  height: 6rem;
+  width: 4px;
+  background: var(--cor-1);
+}
+
+.logo img {
+  width: 3rem;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 38vw;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(5px);
+  padding: 0 5rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.titleAndTexts {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleAndTexts button {
+  align-self: flex-start;
+}
+
+.titleAndTexts h1 {
+  font-size: 5.5rem;
+  line-height: 7rem;
+  align-self: flex-end;
+  width: max-content;
+  width: -webkit-max-content;
+}
+
+.description {
+  margin: 2rem 0;
+}
+
+.btnsImages {
+  margin-top: auto;
+}
+
+.btnsImages,
+.btnsAndMedia address {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+}
+
+.btnImage {
+  width: 10px;
+  height: 10px;
+  background: var(--cor-2);
+  border-radius: 50%;
+}
+
+.btnsAndMedia {
+  width: 5rem;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.media {
+  margin-top: auto;
+}
+
+.media a {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--cor-2);
+  border-radius: 0.2rem;
+  display: grid;
+  place-items: center;
+}
+
+.media a:nth-of-type(1) {
+  border: none;
+  background: var(--cor-1);
+  color: var(--cor-6);
+}
+
+.tel {
+  margin-bottom: auto;
+  margin-left: -5rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.tel::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--cor-1);
+  margin-right: 0.5rem;
 }

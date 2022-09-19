@@ -3,15 +3,16 @@
   width: 100%;
   height: 5.5rem;
   transition: 0.2s;
+  z-index: 9;
 }
 
 .headerScrolled {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
 }
 
 .headerContainer {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
   height: 100%;
@@ -28,7 +29,7 @@
 
 .menuBtn > div {
   width: 1.7rem;
-  height: 2px;
+  height: 3px;
   background: var(--cor-2);
   transition: 0.3s;
 }
@@ -38,7 +39,7 @@
   content: "";
   display: block;
   position: relative;
-  height: 2px;
+  height: 3px;
   background: inherit;
 }
 
@@ -48,8 +49,7 @@
 }
 
 .menuBtn > div::after {
-  bottom: -0.4rem;
-  height: 2px;
+  bottom: -0.3rem;
   width: 1.5rem;
 }
 

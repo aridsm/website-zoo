@@ -22,6 +22,11 @@ body {
   color: var(--cor-5);
 }
 
+h2 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -49,8 +54,8 @@ button {
   transition: 0.1s;
 }
 .btn-amarelo:hover {
-  background: #fffa74;
-  transform: scale(1.05);
+  background: #fffa68;
+  transform: translateX(0.5rem);
 }
 img {
   display: block;
