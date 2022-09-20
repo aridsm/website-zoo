@@ -14,17 +14,17 @@
 .animalsList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 230px);
+  grid-template-rows: repeat(3, 33.333%);
   z-index: 2;
 }
 
 .animalsList li {
   width: 100%;
-  transition: 0.2s;
+  overflow: hidden;
 }
 
-.animalsList li:hover {
-  opacity: 0.9;
+.animalsList li:hover img {
+  transform: scale(1.05);
 }
 
 .animalsList button {
@@ -37,6 +37,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: 0.1s;
 }
 
 .animalsList li:nth-of-type(5) {

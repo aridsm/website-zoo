@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
 :root {
-  --cor-1: #fdf64f;
+  --cor-1: #ebe542;
   --cor-2: #eef1c5;
-  --cor-3: #9c0c0c;
+  --cor-3: #1c5705;
   --cor-4: #307510;
-  --cor-5: #1e1f2d;
+  --cor-5: rgb(29, 31, 50);
   --cor-6: #514e12;
 }
 

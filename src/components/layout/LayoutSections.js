@@ -17,9 +17,11 @@ const LayoutSections = ({
         <span>{subtitle}</span>
         <h2>{title}</h2>
         <p className={classes.description}>{content}</p>
-        <a href="/" className="btn-amarelo">
-          {buttonText}
-        </a>
+        {buttonText && (
+          <a href="/" className="btn-amarelo">
+            {buttonText}
+          </a>
+        )}
       </div>
       {children}
     </section>

@@ -1,13 +1,18 @@
 .container {
-  background: var(--cor-3);
+  background: var(--cor-5);
   color: var(--cor-2);
 }
 
 .activitiesList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 350px 350px;
+  grid-template-rows: 50% 50%;
   order: 2;
+  z-index: 2;
+}
+
+.activitiesList li:hover img {
+  transform: scale(1.05);
 }
 
 .activitiesList li,
@@ -17,6 +22,11 @@
   height: 100%;
 }
 
+.activitiesList li {
+  overflow: hidden;
+}
+
 .activitiesList img {
   object-fit: cover;
+  transition: 0.1s;
 }
