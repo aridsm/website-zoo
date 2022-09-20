@@ -8,3 +8,22 @@
   background-color: var(--cor-1);
   color: var(--cor-5);
 }
+
+.questionList li + li {
+  margin-top: 1rem;
+}
+.questionList button {
+  font-weight: 800;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  text-align: left;
+  transition: 0.1s;
+}
+
+.questionList button:hover {
+  border-left: 0.8rem solid var(--cor-5);
+  padding-left: 0.5rem;
+}
+.answer {
+  display: none;
+}
