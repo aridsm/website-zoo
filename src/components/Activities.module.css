@@ -1,6 +1,10 @@
 .container {
-  background: var(--cor-5);
-  color: var(--cor-2);
+  background: var(--cor-2);
+  color: var(--cor-5);
+}
+
+.bg {
+  opacity: 0.04;
 }
 
 .activitiesList {

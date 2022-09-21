@@ -1,5 +1,5 @@
 .container {
-  height: 95vh;
+  height: calc(100vh - 5rem);
   display: flex;
 }
 

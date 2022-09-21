@@ -4,6 +4,7 @@ import ImgEntrada1 from "../assets/img-entrada-1.jpg";
 import ImgEntrada2 from "../assets/img-entrada-2.jpg";
 import ImgEntrada3 from "../assets/img-entrada-3.jpg";
 import ImgEntrada4 from "../assets/img-entrada-4.jpg";
+import ImgEntrada5 from "../assets/img-entrada-5.jpg";
 import ImgLogo from "../assets/img-logo.png";
 import { ReactComponent as IconFacebook } from "../assets/facebook.svg";
 import { ReactComponent as IconInstagram } from "../assets/instagram.svg";
@@ -18,7 +19,7 @@ const images = [
 const Entrada = () => {
   return (
     <section className={classes.entrada}>
-      <img src={ImgEntrada1} alt="camaleão" />
+      <img src={ImgEntrada2} alt="camaleão" />
       <div className={classes.btnsAndMedia}>
         <div className={classes.btnsImages}>
           {images.map((image) => (
@@ -38,7 +39,6 @@ const Entrada = () => {
         </address>
       </div>
       <div className={classes.content}>
-        <span className={classes.tel}>+00 12345-6789</span>
         <div className={classes.titleAndTexts}>
           <h1>
             Lorem ipsum <br /> dolor sit amet
@@ -49,12 +49,6 @@ const Entrada = () => {
           </p>
           <button className="btn-amarelo">Compre o seu ingresso</button>
         </div>
-      </div>
-      <div className={classes.logoContainer}>
-        <span className={classes.logo}>
-          <img src={ImgLogo} alt="logo de tucano" />
-          <div>Zoo</div>
-        </span>
       </div>
     </section>
   );

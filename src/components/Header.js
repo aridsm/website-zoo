@@ -36,6 +36,16 @@ const Header = () => {
       }`}
     >
       <div className={classes.headerContainer}>
+        <span className={classes.logo}>
+          <img src={ImgLogo} alt="logo de tucano" />
+          <div>Zoo</div>
+        </span>
+        <a href="/" className={`btn-amarelo ${classes.btnDonation}`}>
+          Faça uma doação
+        </a>
+        <a href="/" className="btn-amarelo">
+          Compre seu ingresso
+        </a>
         <button
           className={`${classes.menuBtn} ${
             navIsVisible ? classes.visible : ""
@@ -46,16 +56,6 @@ const Header = () => {
         >
           <div />
         </button>
-        {didPageScroll && (
-          <>
-            <button className="btn-amarelo">Compre seu ingresso</button>
-            <span className={classes.logo}>
-              <img src={ImgLogo} alt="logo de um tucano" />
-              <div>Zoo</div>
-            </span>
-          </>
-        )}
-
         <MenuNavHeader navIsVisible={navIsVisible} />
       </div>
     </header>

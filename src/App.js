@@ -1,5 +1,6 @@
 import Activities from "./components/Activities";
 import Animals from "./components/Animals";
+import EmailSection from "./components/EmailSection";
 import Entrada from "./components/Entrada";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
@@ -14,6 +15,7 @@ function App() {
         <Animals />
         <Activities />
         <Faq />
+        <EmailSection />
       </main>
       <Footer />
     </div>

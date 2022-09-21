@@ -4,7 +4,7 @@
   --cor-1: #ebe542;
   --cor-2: #eef1c5;
   --cor-3: #1c5705;
-  --cor-4: #307510;
+  --cor-4: #a23918;
   --cor-5: rgb(29, 31, 50);
   --cor-6: #514e12;
 }
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Poppins";
   font-weight: 400;
   color: var(--cor-5);
@@ -50,8 +50,8 @@ button {
 
 .btn-amarelo {
   background: var(--cor-1);
-  padding: 0.7rem 1rem;
-  border-radius: 0.2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.8rem;
   color: var(--cor-6);
   transition: 0.1s;
 }

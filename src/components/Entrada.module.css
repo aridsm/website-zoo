@@ -2,6 +2,7 @@
   height: 100vh;
   color: var(--cor-2);
   display: flex;
+  box-shadow: inset 0px 0px 250px 50px #090b09;
 }
 
 .entrada > img {
@@ -12,38 +13,8 @@
   z-index: -1;
 }
 
-.logoContainer {
-  display: grid;
-  place-items: center;
-  width: 7rem;
-}
-.logo {
-  text-align: center;
-  font-weight: 800;
-  width: 100%;
-  position: relative;
-}
-
-.logo::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: -4px;
-  top: -0.8rem;
-  height: 6rem;
-  width: 4px;
-  background: var(--cor-1);
-}
-
-.logo img {
-  width: 3rem;
-  margin: 0 auto;
-}
-
 .content {
   max-width: 38vw;
-  background: rgba(255, 255, 255, 0.01);
-  backdrop-filter: blur(5px);
   padding: 0 5rem 5rem 5rem;
   display: flex;
   flex-direction: column;
@@ -62,14 +33,14 @@
 
 .titleAndTexts h1 {
   font-size: 5.5rem;
-  line-height: 7rem;
+  line-height: 6rem;
   align-self: flex-end;
   width: max-content;
   width: -webkit-max-content;
 }
 
 .description {
-  margin: 2rem 0;
+  margin: 1rem 0 2rem 0;
 }
 
 .btnsImages {
@@ -116,22 +87,4 @@
   border: none;
   background: var(--cor-1);
   color: var(--cor-6);
-}
-
-.tel {
-  margin-bottom: auto;
-  margin-left: -5rem;
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
-}
-
-.tel::before {
-  content: "";
-  display: inline-block;
-  position: relative;
-  width: 2rem;
-  height: 2rem;
-  background-color: var(--cor-1);
-  margin-right: 0.5rem;
 }

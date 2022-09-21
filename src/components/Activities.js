@@ -46,6 +46,7 @@ const Activities = () => {
     malesuada sit amet arcu id pellentesque."
       subtitle="O que você irá encontrar aqui"
       buttonText="Saiba mais"
+      classBg={classes.bg}
     >
       <ul className={classes.activitiesList}>
         {activities.map((activity) => (
