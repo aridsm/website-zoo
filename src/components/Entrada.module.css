@@ -43,48 +43,37 @@
   margin: 1rem 0 2rem 0;
 }
 
-.btnsImages {
-  margin-top: auto;
-}
-
-.btnsImages,
-.btnsAndMedia address {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 1rem;
-}
-
-.btnImage {
-  width: 10px;
-  height: 10px;
-  background: var(--cor-2);
-  border-radius: 50%;
-}
-
-.btnsAndMedia {
-  width: 5rem;
-  padding: 4rem 0;
+.valuesList {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  position: relative;
 }
 
-.media {
-  margin-top: auto;
-}
-
-.media a {
-  width: 2rem;
-  height: 2rem;
-  border: 2px solid var(--cor-2);
-  border-radius: 0.2rem;
-  display: grid;
-  place-items: center;
-}
-
-.media a:nth-of-type(1) {
-  border: none;
+.valuesList::after {
+  content: "";
+  display: block;
   background: var(--cor-1);
-  color: var(--cor-6);
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+  bottom: 0;
+}
+
+.valuesList li + li {
+  margin-top: 2rem;
+}
+
+.valuesList li {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.valuesList span {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 800;
+  display: block;
 }

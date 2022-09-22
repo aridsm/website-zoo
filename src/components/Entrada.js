@@ -6,9 +6,6 @@ import ImgEntrada3 from "../assets/img-entrada-3.jpg";
 import ImgEntrada4 from "../assets/img-entrada-4.jpg";
 import ImgEntrada5 from "../assets/img-entrada-5.jpg";
 import ImgLogo from "../assets/img-logo.png";
-import { ReactComponent as IconFacebook } from "../assets/facebook.svg";
-import { ReactComponent as IconInstagram } from "../assets/instagram.svg";
-import { ReactComponent as IconYoutube } from "../assets/youtube.svg";
 
 const images = [
   { src: ImgEntrada1, name: "camaleão" },
@@ -20,24 +17,20 @@ const Entrada = () => {
   return (
     <section className={classes.entrada}>
       <img src={ImgEntrada2} alt="camaleão" />
-      <div className={classes.btnsAndMedia}>
-        <div className={classes.btnsImages}>
-          {images.map((image) => (
-            <button key={image.name} className={classes.btnImage} />
-          ))}
-        </div>
-        <address className={classes.media}>
-          <a href="/">
-            <IconFacebook />
-          </a>
-          <a href="/">
-            <IconInstagram />
-          </a>
-          <a href="/">
-            <IconYoutube />
-          </a>
-        </address>
-      </div>
+      <ul className={classes.valuesList}>
+        <li>
+          <span>3192</span>
+          <pattern>animais</pattern>
+        </li>
+        <li>
+          <span>341</span>
+          <p>espécies</p>
+        </li>
+        <li>
+          <span>20+</span>
+          <p>espaços de lazer</p>
+        </li>
+      </ul>
       <div className={classes.content}>
         <div className={classes.titleAndTexts}>
           <h1>
