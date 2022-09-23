@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
 :root {
-  --cor-1: #77b746;
-  --cor-2: #eef1c5;
-  --cor-3: #1c5705;
+  --cor-1: #67fd4f;
+  --cor-2: #ebf9e3;
+  --cor-3: #0f2011;
   --cor-4: #a23918;
-  --cor-5: rgb(29, 31, 50);
-  --cor-6: #514e12;
+  --cor-5: rgb(18, 19, 27);
+  --cor-6: #091009;
+  --cor-7: #1fe857;
 }
 
 * {
@@ -16,10 +17,14 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Poppins";
   font-weight: 400;
   color: var(--cor-5);
+}
+
+main {
+  padding-left: 10rem;
 }
 
 h2 {
@@ -48,15 +53,12 @@ button {
   background: none;
 }
 
-.btn-amarelo {
-  background: var(--cor-1);
+.btn-verde {
+  background: linear-gradient(180deg, var(--cor-1) 0%, var(--cor-7) 100%);
   padding: 0.6rem 1rem;
   border-radius: 0.2rem;
-  color: var(--cor-6);
+  color: var(--cor-3);
   transition: 0.1s;
-}
-.btn-amarelo:hover {
-  background: #fffa68;
 }
 img {
   display: block;
@@ -67,7 +69,7 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--cor-5);
+  background: var(--cor-6);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -76,5 +78,5 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--cor-6);
+  background: var(--cor-7);
 }

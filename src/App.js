@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
       <Header />
-      <Entrada />
       <main>
+        <Entrada />
         <Animals />
         <Activities />
         <Faq />

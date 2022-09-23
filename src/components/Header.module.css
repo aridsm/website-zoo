@@ -1,37 +1,42 @@
 .header {
   position: fixed;
-  width: 100%;
-  height: 7rem;
-  transition: 0.2s;
+  width: 10rem;
+  transition: 0.4s;
   z-index: 9;
-  height: 7rem;
-}
-.btnDonation {
-  background: transparent;
-  box-shadow: inset 0 0 0 1px var(--cor-1);
-  color: var(--cor-1);
-  margin-right: 2rem;
-}
-
-.btnDonation:hover {
-  color: var(--cor-5);
-}
-.headerScrolled {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  height: 5rem;
-}
-
-.headerContainer {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  height: 100%;
+  background-color: var(--cor-6);
+  height: 100vh;
+  padding: 1.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  text-align: center;
+  border-top: 10px solid var(--cor-1);
 }
 
+.nav {
+  color: var(--cor-2);
+  margin: auto;
+}
+
+.nav li span {
+  text-transform: capitalize;
+}
+
+.nav li + li {
+  margin-top: 1.5rem;
+}
+.nav li a {
+  transition: 0.2s;
+}
+.nav li a:hover {
+  color: var(--cor-1);
+}
+
+.nav li p {
+  font-size: 0.6rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
 .menuBtn {
   margin-left: 2rem;
   height: 2rem;
@@ -73,29 +78,4 @@
 .menuBtn.visible > div::before {
   transform: rotate(90deg);
   top: 0;
-}
-.logo {
-  color: var(--cor-2);
-  font-weight: 800;
-  text-align: center;
-  margin-right: auto;
-  padding: 1rem;
-  text-transform: uppercase;
-  display: flex;
-  font-size: 1.2rem;
-}
-
-.logo svg {
-  width: 1.5rem;
-  fill: var(--cor-2);
-  margin-right: 0.5rem;
-}
-
-.media {
-  color: var(--cor-2);
-  margin-right: 2rem;
-}
-
-.media a + a {
-  margin-left: 1rem;
 }

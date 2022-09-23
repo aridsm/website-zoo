@@ -1,78 +1,36 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import classes from "./Header.module.css";
-import ImgLogo from "../assets/img-logo.png";
-import MenuNavHeader from "./MenuNavHeader";
-import { ReactComponent as IconFacebook } from "../assets/facebook.svg";
-import { ReactComponent as IconInstagram } from "../assets/instagram.svg";
-import { ReactComponent as IconYoutube } from "../assets/youtube.svg";
-import { ReactComponent as IconLogo } from "../assets/logo.svg";
+import MediasLink from "./layout/MediasLink";
+import Logo from "./layout/Logo";
+
+const listLinks = [
+  { route: "animais", description: "conheça nossos animais" },
+  { route: "atividades", description: "o que fazer aqui" },
+  { route: "mapa", description: "mapa do zoo" },
+  { route: "sobre", description: "conheça nossa história" },
+  { route: "contato", description: "fale conosco" },
+  { route: "faq", description: "perguntas frequentes" },
+];
 
 const Header = () => {
-  const [navIsVisible, setNavIsVisible] = useState(false);
-  const [didPageScroll, setDidPageScroll] = useState(false);
-
-  const btnRef = useRef();
-
-  useEffect(() => {
-    const closeMenuHandler = (e) => {
-      if (e.target !== btnRef.current && !btnRef.current.contains(e.target)) {
-        setNavIsVisible(false);
-      }
-    };
-
-    window.addEventListener("click", closeMenuHandler);
-    return () => window.removeEventListener("click", closeMenuHandler);
-  }, []);
-
-  useEffect(() => {
-    const checkScrollPage = (e) => {
-      if (window.scrollY > 0) setDidPageScroll(true);
-      else setDidPageScroll(false);
-    };
-    window.addEventListener("scroll", checkScrollPage);
-    return () => window.removeEventListener("scroll", checkScrollPage);
-  }, []);
-
   return (
-    <header
-      className={`${classes.header} ${
-        didPageScroll ? classes.headerScrolled : ""
-      }`}
-    >
-      <div className={classes.headerContainer}>
-        <span className={classes.logo}>
-          <IconLogo />
-          <div>Zoo</div>
-        </span>
-        <address className={classes.media}>
-          <a href="/">
-            <IconFacebook />
-          </a>
-          <a href="/">
-            <IconInstagram />
-          </a>
-          <a href="/">
-            <IconYoutube />
-          </a>
-        </address>
-        <a href="/" className={`btn-amarelo ${classes.btnDonation}`}>
-          Faça uma doação
-        </a>
-        <a href="/" className="btn-amarelo">
-          Compre seu ingresso
-        </a>
-        <button
-          className={`${classes.menuBtn} ${
-            navIsVisible ? classes.visible : ""
-          }`}
-          aria-label={navIsVisible ? "fechar menu" : "abrir menu"}
-          onClick={() => setNavIsVisible((prev) => !prev)}
-          ref={btnRef}
-        >
-          <div />
-        </button>
-        <MenuNavHeader navIsVisible={navIsVisible} />
-      </div>
+    <header className={classes.header}>
+      <a href="/">
+        <Logo />
+      </a>
+      <nav className={classes.nav}>
+        <ul>
+          {listLinks.map((link) => (
+            <li key={link.route}>
+              <a href="/">
+                <span>{link.route}</span>
+                <p>{link.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <MediasLink />
     </header>
   );
 };
