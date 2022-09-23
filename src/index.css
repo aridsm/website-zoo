@@ -5,7 +5,7 @@
   --cor-2: #ebf9e3;
   --cor-3: #0f2011;
   --cor-4: #a23918;
-  --cor-5: rgb(18, 19, 27);
+  --cor-5: #0b130c;
   --cor-6: #091009;
   --cor-7: #1fe857;
 }
@@ -28,8 +28,8 @@ main {
 }
 
 h2 {
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 a {
@@ -55,10 +55,10 @@ button {
 
 .btn-verde {
   background: linear-gradient(180deg, var(--cor-1) 0%, var(--cor-7) 100%);
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 1.1rem;
   border-radius: 0.2rem;
   color: var(--cor-3);
-  transition: 0.1s;
+  transition: 0.2s;
 }
 img {
   display: block;

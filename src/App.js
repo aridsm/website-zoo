@@ -5,6 +5,7 @@ import Entrada from "./components/Entrada";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Valores from "./components/Valores";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Entrada />
         <Animals />
+        <Valores />
         <Activities />
         <Faq />
         <EmailSection />

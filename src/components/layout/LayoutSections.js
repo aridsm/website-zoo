@@ -16,7 +16,7 @@ const LayoutSections = ({
     <section className={styles}>
       <div className={stylesBg}></div>
       <div className={classes.content}>
-        <span>{subtitle}</span>
+        <span className={classes.subtitle}>{subtitle}</span>
         <h2>{title}</h2>
         <p className={classes.description}>{content}</p>
         {buttonText && (

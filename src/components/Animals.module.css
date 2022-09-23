@@ -14,7 +14,7 @@
 .animalsList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 33.333%);
+  grid-template-rows: repeat(3, 200px);
   z-index: 2;
 }
 

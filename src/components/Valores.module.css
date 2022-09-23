@@ -1,0 +1,52 @@
+.container {
+  background: var(--cor-5);
+  color: var(--cor-2);
+  overflow: hidden;
+}
+
+.bg {
+  background: none;
+}
+
+.img img {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: 380px;
+}
+
+.detail1 {
+  background: linear-gradient(180deg, var(--cor-1) 0%, var(--cor-7) 100%);
+  border-radius: 200px;
+  width: 250px;
+  height: 570px;
+  position: absolute;
+  left: 10%;
+  bottom: -200px;
+  z-index: 0;
+  transform: rotate(30deg);
+}
+
+.detail1::before {
+  content: "";
+  display: block;
+  border-radius: 100px;
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  background: var(--cor-1);
+  left: -80px;
+  top: 30%;
+}
+
+.detail1::after {
+  content: "";
+  display: block;
+  border-radius: 100px;
+  position: absolute;
+  width: 60px;
+  height: 110px;
+  background: var(--cor-1);
+  right: -100px;
+  top: 22%;
+}
