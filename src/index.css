@@ -8,6 +8,7 @@
   --cor-5: #0b130c;
   --cor-6: #091009;
   --cor-7: #1fe857;
+  --cor-8: #101f14;
 }
 
 * {
@@ -17,7 +18,7 @@
 }
 
 body {
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Poppins";
   font-weight: 400;
   color: var(--cor-5);

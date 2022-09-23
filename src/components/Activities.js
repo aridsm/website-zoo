@@ -51,9 +51,9 @@ const Activities = () => {
       <ul className={classes.activitiesList}>
         {activities.map((activity) => (
           <li key={activity.id}>
-            <button>
-              <img src={activity.src} alt={activity.name} />
-            </button>
+            <img src={activity.src} alt={activity.name} />
+            <h3>{activity.name}</h3>
+            <p>{activity.descricao}</p>
           </li>
         ))}
       </ul>
