@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Faq.module.css";
 import LayoutSections from "./layout/LayoutSections";
-import ImgFaq from "../assets/img-faq.jpg";
+import ImgGorila from "../assets/gorilla.png";
 
 const questions = [
   {
@@ -35,27 +35,29 @@ const questions = [
 ];
 
 const Faq = () => {
-  const questionsContent = (
-    <ul className={classes.questionList}>
-      {questions.map((q) => (
-        <li key={q.id}>
-          <button>{q.question}</button>
-          <p className={classes.answer}>{q.answer}</p>
-        </li>
-      ))}
-    </ul>
-  );
   return (
-    <LayoutSections
-      className={classes.container}
-      title="FAQ"
-      content={questionsContent}
-      subtitle="Perguntas frequentes"
-    >
+    <section className={classes.section}>
+      <LayoutSections
+        subtitle="Perguntas frequentes"
+        title="FAQ"
+        className={classes.content}
+      >
+        <ul className={classes.questionList}>
+          {questions.map((q) => (
+            <li key={q.id}>
+              <button>{q.question}</button>
+              <p className={classes.answer}>{q.answer}</p>
+            </li>
+          ))}
+        </ul>
+        <a href="/" className={`btn-verde ${classes.link}`}>
+          Todos as perguntas
+        </a>
+      </LayoutSections>
       <div className={classes.imgContainer}>
-        <img src={ImgFaq} alt="gorila" />
+        <img src={ImgGorila} alt="gorila" />
       </div>
-    </LayoutSections>
+    </section>
   );
 };
 

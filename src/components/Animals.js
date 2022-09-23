@@ -67,14 +67,21 @@ const animals = [
 
 const Animals = () => {
   return (
-    <LayoutSections
-      className={classes.container}
-      title="Nossos animais"
-      content="Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc
-      malesuada sit amet arcu id pellentesque."
-      subtitle="O que você irá encontrar aqui"
-      buttonText="Todos os animais"
-    >
+    <section className={classes.section}>
+      <LayoutSections
+        title="Nossos animais"
+        subtitle="O que você irá encontrar aqui"
+        className={classes.content}
+      >
+        <p>
+          Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc
+          malesuada sit amet arcu id pellentesque.
+        </p>
+
+        <a href="/" className={`btn-verde ${classes.link}`}>
+          Todos os animais
+        </a>
+      </LayoutSections>
       <ul className={classes.animalsList}>
         {animals.map((animal) => (
           <li key={animal.id}>
@@ -84,7 +91,7 @@ const Animals = () => {
           </li>
         ))}
       </ul>
-    </LayoutSections>
+    </section>
   );
 };
 

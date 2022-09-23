@@ -1,11 +1,15 @@
-.container {
+.section {
   background: var(--cor-5);
   color: var(--cor-2);
   overflow: hidden;
+  display: flex;
 }
 
-.bg {
-  background: none;
+.img {
+  width: 50%;
+  order: -1;
+  position: relative;
+  padding-top: 2rem;
 }
 
 .img img {
@@ -21,7 +25,7 @@
   width: 250px;
   height: 570px;
   position: absolute;
-  left: 10%;
+  left: 20%;
   bottom: -200px;
   z-index: 0;
   transform: rotate(30deg);
@@ -49,4 +53,21 @@
   background: var(--cor-1);
   right: -100px;
   top: 22%;
+}
+
+.valuesList {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.valuesList li {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  background: var(--cor-3);
+  max-width: 200px;
+  display: grid;
+  place-items: center;
+}
+
+.valuesList li + li {
+  margin-left: 1rem;
 }

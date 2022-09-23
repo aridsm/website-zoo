@@ -1,0 +1,5 @@
+.footer {
+  background: var(--cor-3);
+  padding-left: 10rem;
+  border: 1px solid red;
+}

@@ -3,27 +3,50 @@
   height: 100%;
   object-fit: cover;
 }
-
-.container {
-  background-color: var(--cor-1);
+.imgContainer {
+  order: -1;
+}
+.section {
+  background-color: var(--cor-7);
   color: var(--cor-5);
+  display: flex;
+  background-image: url("../assets/bg.png");
+  background-size: cover;
 }
 
+.content > span {
+  color: var(--cor-5);
+}
 .questionList li + li {
   margin-top: 1rem;
 }
 .questionList button {
   font-weight: 800;
-  font-size: 1.1rem;
-  line-height: 1.1rem;
   text-align: left;
   transition: 0.1s;
 }
 
-.questionList button:hover {
-  border-left: 0.8rem solid var(--cor-5);
-  padding-left: 0.5rem;
+.questionList button:hover::before {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.questionList button::before {
+  content: "";
+  display: inline-block;
+  background: currentColor;
+  width: 0;
+  height: 3px;
+  position: relative;
+  top: -3px;
+  transition: 0.2s;
 }
 .answer {
   display: none;
+}
+
+.link {
+  background: var(--cor-5);
+  color: var(--cor-7);
+  margin-top: 2rem;
 }

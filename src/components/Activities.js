@@ -39,15 +39,19 @@ const activities = [
 
 const Activities = () => {
   return (
-    <LayoutSections
-      className={classes.container}
-      title="Nossas atividades"
-      content="Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc
-    malesuada sit amet arcu id pellentesque."
-      subtitle="O que você irá encontrar aqui"
-      buttonText="Saiba mais"
-      classBg={classes.bg}
-    >
+    <section className={classes.section}>
+      <LayoutSections
+        title="Nossas atividades"
+        subtitle="O que você irá encontrar aqui"
+      >
+        <p className={classes.txt}>
+          Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc
+          malesuada sit amet arcu id pellentesque.
+        </p>
+        <a href="/" className="btn-verde">
+          Saiba mais
+        </a>
+      </LayoutSections>
       <ul className={classes.activitiesList}>
         {activities.map((activity) => (
           <li key={activity.id}>
@@ -57,7 +61,7 @@ const Activities = () => {
           </li>
         ))}
       </ul>
-    </LayoutSections>
+    </section>
   );
 };
 
