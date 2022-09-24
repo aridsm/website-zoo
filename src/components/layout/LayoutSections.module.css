@@ -17,3 +17,20 @@
   margin-bottom: 0.5rem;
   color: var(--cor-1);
 }
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 5rem 3rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .content > * {
+    max-width: 400px;
+  }
+}

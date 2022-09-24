@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
 :root {
-  --cor-1: #60dc4c;
+  --cor-1: #53cc40;
   --cor-2: #dcf7e1;
   --cor-3: #0f2011;
   --cor-4: #a23918;
@@ -84,4 +84,17 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--cor-7);
+}
+
+@media (max-width: 1100px) {
+  main {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }

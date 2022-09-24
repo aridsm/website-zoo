@@ -39,12 +39,13 @@
 }
 .menuBtn {
   margin-left: 2rem;
-  height: 2rem;
-  width: 2rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  text-align: center;
 }
 
 .menuBtn > div {
-  width: 1.7rem;
+  width: 100%;
   height: 3px;
   background: var(--cor-2);
   transition: 0.3s;
@@ -78,4 +79,36 @@
 .menuBtn.visible > div::before {
   transform: rotate(90deg);
   top: 0;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    width: 100%;
+    height: 4rem;
+    border-left: 10px solid var(--cor-1);
+    border-top: none;
+    flex-direction: row;
+    border-bottom: 5px solid var(--cor-5);
+  }
+  .nav {
+    position: absolute;
+    top: 4rem;
+    left: -10px;
+    z-index: 9;
+    background: var(--cor-5);
+    width: calc(100% + 10px);
+    padding: 3rem;
+    transition: 0.2s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav.visible {
+    color: var(--cor-2);
+    visibility: visible;
+    opacity: 1;
+  }
+  .header > a {
+    margin-right: auto;
+  }
 }

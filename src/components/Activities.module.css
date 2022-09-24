@@ -40,3 +40,17 @@
 .txt {
   margin-bottom: 2rem;
 }
+
+@media (max-width: 930px) {
+  .section {
+    flex-direction: column;
+  }
+  .activitiesList {
+    padding: 0 2rem 4rem 2rem;
+    width: 100%;
+    overflow: auto;
+  }
+  .activitiesList::-webkit-scrollbar {
+    display: none;
+  }
+}

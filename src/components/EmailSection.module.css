@@ -25,7 +25,7 @@
 
 .form .email {
   width: 100%;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 0.2rem;
   background: var(--cor-2);
   outline: none;
@@ -35,7 +35,42 @@
 .form .btn {
   background: var(--cor-5);
   color: var(--cor-1);
-  padding: 1rem;
-  width: 50%;
+  padding: 0.7rem;
+  width: 40%;
   margin-left: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    flex-direction: column;
+  }
+  .form .btn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 }

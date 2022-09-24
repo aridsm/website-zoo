@@ -71,3 +71,54 @@
 .valuesList li + li {
   margin-left: 1rem;
 }
+
+@media (max-width: 1200px) {
+  .detail1 {
+    width: 220px;
+    height: 550px;
+    left: 10%;
+    bottom: -220px;
+  }
+}
+
+@media (max-width: 930px) {
+  .section {
+    flex-direction: column;
+  }
+  .img {
+    width: 100%;
+    order: 2;
+    padding-top: 0;
+    margin-top: -2rem;
+  }
+  .img img {
+    margin: 0 auto;
+    width: 280px;
+  }
+  .detail1 {
+    width: 180px;
+    height: 450px;
+    left: calc(50% - 160px);
+    bottom: -220px;
+  }
+  .detail1::before {
+    left: -55px;
+  }
+  .detail1::after {
+    width: 50px;
+    height: 90px;
+    right: -65px;
+    top: 10%;
+  }
+  .content > * {
+    max-width: 100%;
+  }
+
+  .valuesList {
+    flex-direction: column;
+  }
+  .valuesList li + li {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}

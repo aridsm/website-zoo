@@ -9,6 +9,7 @@ const Valores = () => {
       <LayoutSections
         title="Nossos valores"
         subtitle="O que você irá encontrar aqui"
+        className={classes.content}
       >
         <ul className={classes.valuesList}>
           <li>Etiam dignissim eu ipsum tempus</li>
