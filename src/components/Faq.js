@@ -37,11 +37,7 @@ const questions = [
 const Faq = () => {
   return (
     <section className={classes.section}>
-      <LayoutSections
-        subtitle="Perguntas frequentes"
-        title="FAQ"
-        className={classes.content}
-      >
+      <LayoutSections subtitle="Perguntas frequentes" title="FAQ">
         <ul className={classes.questionList}>
           {questions.map((q) => (
             <li key={q.id}>
@@ -50,7 +46,7 @@ const Faq = () => {
             </li>
           ))}
         </ul>
-        <a href="/" className={`btn-verde ${classes.link}`}>
+        <a href="/" className="btn-verde">
           Todos as perguntas
         </a>
       </LayoutSections>

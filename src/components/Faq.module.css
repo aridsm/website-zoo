@@ -3,25 +3,23 @@
   height: 100%;
   object-fit: cover;
 }
+
 .imgContainer {
-  order: -1;
+  width: 50%;
 }
 .section {
-  background-color: var(--cor-7);
-  color: var(--cor-5);
+  background-color: var(--cor-8);
+  color: var(--cor-2);
   display: flex;
-  background-image: url("../assets/bg.png");
-  background-size: cover;
 }
 
-.content > span {
-  color: var(--cor-5);
+.questionList {
+  margin-bottom: 2rem;
 }
 .questionList li + li {
   margin-top: 1rem;
 }
 .questionList button {
-  font-weight: 800;
   text-align: left;
   transition: 0.1s;
 }
@@ -43,10 +41,4 @@
 }
 .answer {
   display: none;
-}
-
-.link {
-  background: var(--cor-5);
-  color: var(--cor-7);
-  margin-top: 2rem;
 }

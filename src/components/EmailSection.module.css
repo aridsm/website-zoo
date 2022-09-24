@@ -1,0 +1,41 @@
+.section {
+  background: var(--cor-1);
+  padding: 3rem 6rem;
+  display: flex;
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+}
+
+.section h2 {
+  font-size: 2rem;
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  width: 50%;
+}
+
+.form label {
+  visibility: hidden;
+  position: absolute;
+}
+
+.form .email {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  background: var(--cor-2);
+  outline: none;
+  border: none;
+}
+
+.form .btn {
+  background: var(--cor-5);
+  color: var(--cor-1);
+  padding: 1rem;
+  width: 50%;
+  margin-left: 1rem;
+}

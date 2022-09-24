@@ -14,8 +14,8 @@ function App() {
       <main>
         <Entrada />
         <Animals />
-        <Valores />
         <Activities />
+        <Valores />
         <Faq />
         <EmailSection />
       </main>

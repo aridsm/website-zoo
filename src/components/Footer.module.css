@@ -1,5 +1,51 @@
 .footer {
-  background: var(--cor-3);
-  padding-left: 10rem;
-  border: 1px solid red;
+  background: var(--cor-5);
+  color: var(--cor-2);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem 2rem 16rem;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-gap: 0.5rem;
+}
+
+.title {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.footer address {
+  font-style: normal;
+}
+
+.footer address span {
+  display: block;
+}
+
+.footer address span + span {
+  margin-top: 0.5rem;
+}
+
+.email {
+  margin-bottom: 0.5rem;
+}
+.endereco {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  align-self: flex-start;
+}
+
+.madeby {
+  text-align: center;
+  background-color: var(--cor-6);
+  padding: 1.5rem;
+  padding-left: 11.5rem;
 }
