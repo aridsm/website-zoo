@@ -6,62 +6,43 @@ import ImgAnimal3 from "../assets/an-3.jpg";
 import ImgAnimal4 from "../assets/an-4.jpg";
 import ImgAnimal5 from "../assets/an-5.jpg";
 import LayoutSections from "./layout/LayoutSections";
+import Slider from "./layout/Slider";
 
 const animals = [
   {
     src: ImgAnimal1,
     id: "anima1",
-    name: "Léo",
-    especie: "leão",
-    nomeCientifico: "phantera leo",
-    idade: "6 anos",
-    gênero: "macho",
+    especie: "iguana",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      "Aliquam erat volutpat. Suspendisse lobortis lacus eu metus viverra vulputate.",
   },
   {
     src: ImgAnimal2,
     id: "anima2",
-    name: "Léo",
     especie: "leão",
-    nomeCientifico: "phantera leo",
-    idade: "6 anos",
-    gênero: "macho",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      "Aenean at ipsum a eros sollicitudin fringilla. Nullam blandit nisi nec enim faucibus, in consequat nisi varius.",
   },
   {
     src: ImgAnimal3,
     id: "anima3",
-    name: "Léo",
-    especie: "leão",
-    nomeCientifico: "phantera leo",
-    idade: "6 anos",
-    gênero: "macho",
+    especie: "Flamingo",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      "Donec in massa eget sem consectetur pulvinar. Aliquam erat volutpat. Suspendisse lobortis lacus eu metus viverra vulputate.",
   },
   {
     src: ImgAnimal4,
     id: "anima4",
-    name: "Léo",
-    especie: "leão",
-    nomeCientifico: "phantera leo",
-    idade: "6 anos",
-    gênero: "macho",
+    especie: "Rinoceronte",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      " Curabitur sit amet volutpat nulla. Vivamus leo lorem, interdum eget consequat id, aliquet id metus.",
   },
   {
     src: ImgAnimal5,
     id: "anima5",
-    name: "Léo",
-    especie: "leão",
-    nomeCientifico: "phantera leo",
-    idade: "6 anos",
-    gênero: "macho",
+    especie: "mico-leão-dourado",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      "Aliquam tincidunt ante magna, bibendum fermentum dolor venenatis ut. Praesent ipsum nulla, sodales ac posuere quis, tristique eu leo.",
   },
 ];
 
@@ -82,15 +63,16 @@ const Animals = () => {
           Todos os animais
         </a>
       </LayoutSections>
-      <ul className={classes.animalsList}>
+      <Slider className={classes.slider}>
         {animals.map((animal) => (
-          <li key={animal.id}>
-            <button>
-              <img src={animal.src} alt={animal.name} />
-            </button>
+          <li key={animal.id} className={classes.itemAnimal}>
+            <img src={animal.src} alt={animal.name} />
+            <h3>{animal.especie}</h3>
+
+            <p>{animal.descricao}</p>
           </li>
         ))}
-      </ul>
+      </Slider>
     </section>
   );
 };

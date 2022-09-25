@@ -2,13 +2,12 @@
 
 :root {
   --cor-1: #53cc40;
-  --cor-2: #dcf7e1;
-  --cor-3: #0f2011;
-  --cor-4: #a23918;
-  --cor-5: #0b130c;
-  --cor-6: #091009;
-  --cor-7: #30d35e;
-  --cor-8: #101f14;
+  --cor-2: #cfffd8;
+  --cor-3: #30d35e;
+  --cor-4: #14271a;
+  --cor-5: #101c12;
+  --cor-6: #0d160f;
+  --cor-7: #7ea98e;
 }
 
 * {
@@ -55,10 +54,10 @@ button {
 }
 
 .btn-verde {
-  background: linear-gradient(180deg, var(--cor-1) 0%, var(--cor-7) 100%);
+  background: linear-gradient(180deg, var(--cor-1) 0%, var(--cor-3) 100%);
   padding: 0.7rem 1.1rem;
   border-radius: 0.2rem;
-  color: var(--cor-3);
+  color: var(--cor-4);
   transition: 0.2s;
 }
 
@@ -83,7 +82,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--cor-7);
+  background: var(--cor-3);
 }
 
 @media (max-width: 1100px) {
@@ -94,7 +93,10 @@ img {
 
 @media (max-width: 500px) {
   h2 {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  body {
+    font-size: 12px;
   }
 }

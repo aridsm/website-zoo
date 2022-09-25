@@ -5,6 +5,7 @@ import ImgActivity1 from "../assets/at-1.jpg";
 import ImgActivity2 from "../assets/at-2.jpg";
 import ImgActivity3 from "../assets/at-3.jpg";
 import ImgActivity4 from "../assets/at-4.jpg";
+import Slider from "./layout/Slider";
 
 const activities = [
   {
@@ -19,21 +20,21 @@ const activities = [
     id: "at2",
     name: "Restaurante",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      "Sed ac enim in purus tempor mattis. Morbi luctus lobortis eleifend.",
   },
   {
     src: ImgActivity3,
     id: "at3",
     name: "Espaço kids",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      "Nullam blandit nisi nec enim faucibus, in consequat nisi varius. Fusce aliquam facilisis feugiat. Etiam volutpat finibus ex.",
   },
   {
     src: ImgActivity4,
     id: "at4",
     name: "Animais",
     descricao:
-      "Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc malesuada sit amet arcu id pellentesque.",
+      "Aliquam erat volutpat. Suspendisse lobortis lacus eu metus viverra vulputate.",
   },
 ];
 
@@ -52,15 +53,15 @@ const Activities = () => {
           Saiba mais
         </a>
       </LayoutSections>
-      <ul className={classes.activitiesList}>
+      <Slider>
         {activities.map((activity) => (
-          <li key={activity.id}>
+          <li key={activity.id} className={classes.itemActivity}>
             <img src={activity.src} alt={activity.name} />
             <h3>{activity.name}</h3>
             <p>{activity.descricao}</p>
           </li>
         ))}
-      </ul>
+      </Slider>
     </section>
   );
 };

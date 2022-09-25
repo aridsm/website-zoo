@@ -9,7 +9,7 @@
   width: 50%;
 }
 .section {
-  background-color: var(--cor-8);
+  background-color: var(--cor-4);
   color: var(--cor-2);
   display: flex;
 }

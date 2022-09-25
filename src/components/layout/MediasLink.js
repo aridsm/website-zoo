@@ -4,9 +4,9 @@ import classes from "./MediaLinks.module.css";
 import { ReactComponent as IconFacebook } from "../../assets/facebook.svg";
 import { ReactComponent as IconInstagram } from "../../assets/instagram.svg";
 import { ReactComponent as IconYoutube } from "../../assets/youtube.svg";
-const MediasLink = () => {
+const MediasLink = ({ className }) => {
   return (
-    <address className={classes.media}>
+    <address className={`${classes.media} ${className}`}>
       <a href="/">
         <IconFacebook />
       </a>

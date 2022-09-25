@@ -7,7 +7,8 @@ const Entrada = () => {
   return (
     <section className={classes.entrada}>
       <header className={classes.header}>
-        <Logo className={classes.logo} /> <MediasLink />
+        <Logo className={classes.logo} />
+        <MediasLink className={classes.linksMedia} />
         <a className="btn-verde" href="/">
           Compre seu ingresso
         </a>
