@@ -8,7 +8,7 @@ const Valores = () => {
     <section className={classes.section}>
       <LayoutSections
         title="Nossos valores"
-        subtitle="O que você irá encontrar aqui"
+        subtitle="Vivamus justo mauris, semper eu iaculis"
         className={classes.content}
       >
         <ul className={classes.valuesList}>

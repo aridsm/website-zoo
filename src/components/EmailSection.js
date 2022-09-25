@@ -13,7 +13,7 @@ const EmailSection = () => {
           id="email"
           className={classes.email}
         />
-        <button className={`btn-verde ${classes.btn}`}>Inscreva-se</button>
+        <button className={`btn-preto ${classes.btn}`}>Inscreva-se</button>
       </form>
     </section>
   );

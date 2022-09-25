@@ -43,7 +43,7 @@ const Activities = () => {
     <section className={classes.section}>
       <LayoutSections
         title="Nossas atividades"
-        subtitle="O que você irá encontrar aqui"
+        subtitle="Donec aliquam, metus a lacinia"
       >
         <p className={classes.txt}>
           Morbi ac ipsum elit. Cras id sem id neque blandit molestie. Nunc

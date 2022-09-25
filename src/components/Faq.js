@@ -35,7 +35,7 @@ const questions = [
 ];
 
 const Faq = () => {
-  const [answerToShown, setAnswerToShown] = useState("");
+  const [answerToShown, setAnswerToShown] = useState(questions[0].id);
 
   const showAnswerHandler = (id) => {
     setAnswerToShown(id);

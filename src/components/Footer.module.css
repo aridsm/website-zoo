@@ -49,6 +49,13 @@
   padding: 1.5rem;
   padding-left: 11.5rem;
 }
+.madeby a {
+  transition: 0.2s;
+}
+
+.madeby a:hover {
+  color: var(--cor-1);
+}
 
 @media (max-width: 1200px) {
   .container {

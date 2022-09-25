@@ -55,7 +55,8 @@ const Footer = () => {
         <Logo className={classes.logo} />
       </div>
       <div className={classes.madeby}>
-        Projeto feito por <a href="/">Ariane Morelato</a>
+        Projeto feito por{" "}
+        <a href="https://github.com/aridsm">Ariane Morelato</a>
       </div>
     </footer>
   );

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
 
 :root {
   --cor-1: #53cc40;
@@ -53,17 +53,28 @@ button {
   background: none;
 }
 
+.btn-preto,
 .btn-verde {
-  background: linear-gradient(180deg, var(--cor-1) 0%, var(--cor-3) 100%);
   padding: 0.7rem 1.1rem;
   border-radius: 0.2rem;
-  color: var(--cor-4);
   transition: 0.2s;
+  font-weight: 500;
+}
+.btn-verde {
+  background: linear-gradient(180deg, var(--cor-1) 0%, var(--cor-3) 100%);
+  color: var(--cor-4);
 }
 
-.btn-verde:hover {
+.btn-preto {
+  background: var(--cor-5);
+  color: var(--cor-1);
+}
+
+.btn-verde:hover,
+.btn-preto:hover {
   transform: translateY(-0.2rem);
 }
+
 img {
   display: block;
 }

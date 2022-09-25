@@ -7,13 +7,13 @@ import { ReactComponent as IconYoutube } from "../../assets/youtube.svg";
 const MediasLink = ({ className }) => {
   return (
     <address className={`${classes.media} ${className}`}>
-      <a href="/">
+      <a href="/" aria-label="facebook">
         <IconFacebook />
       </a>
-      <a href="/">
+      <a href="/" aria-label="instagram">
         <IconInstagram />
       </a>
-      <a href="/">
+      <a href="/" aria-label="youtube">
         <IconYoutube />
       </a>
     </address>

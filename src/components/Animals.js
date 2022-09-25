@@ -59,14 +59,14 @@ const Animals = () => {
           malesuada sit amet arcu id pellentesque.
         </p>
 
-        <a href="/" className={`btn-verde ${classes.link}`}>
+        <a href="/" className={`btn-preto ${classes.link}`}>
           Todos os animais
         </a>
       </LayoutSections>
       <Slider className={classes.slider}>
         {animals.map((animal) => (
           <li key={animal.id} className={classes.itemAnimal}>
-            <img src={animal.src} alt={animal.name} />
+            <img src={animal.src} alt={animal.especie} />
             <h3>{animal.especie}</h3>
 
             <p>{animal.descricao}</p>

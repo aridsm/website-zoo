@@ -54,6 +54,7 @@ const Header = () => {
         className={`${classes.menuBtn} ${isMenuVisible ? classes.visible : ""}`}
         ref={refBtn}
         onClick={openMenuHandler}
+        aria-label="menu"
       >
         <div className={classes.btnDash}></div>
       </button>

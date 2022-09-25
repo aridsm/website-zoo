@@ -25,6 +25,7 @@
 .questionList button {
   text-align: left;
   transition: 0.1s;
+  font-weight: 500;
 }
 .questionList button:hover::before,
 .questionList button.visible::before {

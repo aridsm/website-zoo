@@ -1,7 +1,12 @@
 .media {
   color: var(--cor-2);
+  display: flex;
+  align-items: center;
 }
-
+.media a {
+  display: flex;
+  align-items: center;
+}
 .media a + a {
   margin-left: 1rem;
 }

@@ -15,7 +15,8 @@
 .itemActivity h3 {
   margin-bottom: 1rem;
   font-size: 13px;
-  font-weight: 800;
+
+  font-weight: 500;
 }
 
 .itemActivity p {
@@ -24,6 +25,7 @@
 
 .itemActivity img {
   width: 100%;
+  height: 250px;
   object-fit: cover;
   margin-bottom: 1rem;
 }
@@ -35,19 +37,9 @@
 @media (max-width: 930px) {
   .section {
     flex-direction: column;
+    padding-top: 0;
   }
-  .activitiesList {
-    padding: 0 2rem 4rem 2rem;
-    width: 100%;
-    overflow: auto;
-  }
-  .activitiesList::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-@media (max-width: 550px) {
-  .activitiesList img {
-    width: 200px;
+  .itemActivity img {
+    height: 180px;
   }
 }

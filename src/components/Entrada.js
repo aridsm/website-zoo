@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Entrada.module.css";
 import MediasLink from "./layout/MediasLink";
 import Logo from "./layout/Logo";
+import { ReactComponent as IconPin } from "../assets/pin.svg";
 
 const Entrada = () => {
   return (
@@ -45,7 +46,9 @@ const Entrada = () => {
           </ul>
 
           <address>
-            <span>Lorem ipsum - 12</span>
+            <span>
+              Lorem ipsum - 12 <IconPin />
+            </span>
           </address>
         </div>
       </div>

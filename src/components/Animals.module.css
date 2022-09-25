@@ -22,8 +22,6 @@
 }
 
 .link {
-  background: var(--cor-5);
-  color: var(--cor-1);
   margin-top: 2rem;
 }
 .itemAnimal {
@@ -37,30 +35,38 @@
   width: 100%;
   object-fit: cover;
   margin-bottom: 1rem;
+  height: 250px;
 }
 .itemAnimal h3 {
   font-size: 13px;
   margin-bottom: 1rem;
-  font-weight: 800;
+
+  font-weight: 500;
   text-transform: capitalize;
 }
 .itemAnimal p {
   color: var(--cor-7);
 }
-@media (max-width: 1200px) {
-  .animalsList {
-    grid-template-rows: repeat(3, 150px);
-  }
-}
 
 @media (max-width: 930px) {
   .section {
     flex-direction: column;
+    padding-top: 0;
   }
   .content {
     order: -1;
   }
-  .animalsList::-webkit-scrollbar {
-    display: none;
+
+  .slider {
+    height: 400px;
+  }
+  .itemAnimal img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .slider {
+    height: 360px;
   }
 }

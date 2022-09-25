@@ -18,3 +18,25 @@
   top: 0;
   padding: 0 1rem;
 }
+
+@media (max-width: 930px) {
+  .containerSlider {
+    width: 100%;
+    overflow: auto;
+    height: 380px;
+  }
+  .containerSlider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .itemsList {
+    grid-gap: 1.5rem;
+    grid-auto-columns: 230px;
+  }
+}
+
+@media (max-width: 500px) {
+  .containerSlider {
+    height: 360px;
+  }
+}
