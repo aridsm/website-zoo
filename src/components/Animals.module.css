@@ -6,9 +6,6 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-.slider {
-  height: 460px;
-}
 .content {
   order: 2;
 }
@@ -38,9 +35,8 @@
   height: 250px;
 }
 .itemAnimal h3 {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 1rem;
-
   font-weight: 500;
   text-transform: capitalize;
 }

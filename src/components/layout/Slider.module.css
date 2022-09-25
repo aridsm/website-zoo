@@ -1,6 +1,6 @@
 .containerSlider {
   width: 50%;
-  height: 420px;
+  height: 460px;
   position: relative;
   cursor: grab;
   overflow: hidden;
@@ -18,12 +18,17 @@
   top: 0;
   padding: 0 1rem;
 }
-
+@media (min-width: 1600px) {
+  .itemsList {
+    grid-auto-columns: 300px;
+  }
+}
 @media (max-width: 930px) {
   .containerSlider {
     width: 100%;
     overflow: auto;
     height: 380px;
+    scrollbar-width: none;
   }
   .containerSlider::-webkit-scrollbar {
     display: none;

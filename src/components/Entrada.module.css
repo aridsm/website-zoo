@@ -23,7 +23,7 @@
   padding: 1rem 3rem;
 }
 
-.header a {
+.header > a {
   margin-left: 2rem;
 }
 

@@ -11,7 +11,7 @@ const Entrada = () => {
         <Logo className={classes.logo} />
         <MediasLink className={classes.linksMedia} />
         <a className="btn-verde" href="/">
-          Compre seu ingresso
+          Faça uma doação
         </a>
       </header>
 

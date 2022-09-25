@@ -95,7 +95,11 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--cor-3);
 }
-
+@media (min-width: 1600px) {
+  body {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1100px) {
   main {
     padding-left: 0;
