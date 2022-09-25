@@ -1,8 +1,9 @@
 .imgContainer img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: contain;
   object-position: bottom;
+  margin-left: auto;
 }
 
 .imgContainer {
@@ -16,6 +17,7 @@
 
 .questionList {
   margin-bottom: 2rem;
+  max-width: 450px;
 }
 .questionList li + li {
   margin-top: 1rem;
@@ -24,8 +26,8 @@
   text-align: left;
   transition: 0.1s;
 }
-
-.questionList button:hover::before {
+.questionList button:hover::before,
+.questionList button.visible::before {
   width: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -41,7 +43,15 @@
   transition: 0.2s;
 }
 .answer {
-  display: none;
+  color: var(--cor-7);
+  transition: 0.2s;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.answer.visible {
+  max-height: 100px;
+  height: 100%;
 }
 
 @media (max-width: 930px) {

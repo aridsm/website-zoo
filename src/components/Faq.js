@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Faq.module.css";
 import LayoutSections from "./layout/LayoutSections";
 import ImgGorila from "../assets/gorilla.png";
@@ -35,14 +35,31 @@ const questions = [
 ];
 
 const Faq = () => {
+  const [answerToShown, setAnswerToShown] = useState("");
+
+  const showAnswerHandler = (id) => {
+    setAnswerToShown(id);
+  };
+
   return (
     <section className={classes.section}>
       <LayoutSections subtitle="Perguntas frequentes" title="FAQ">
         <ul className={classes.questionList}>
           {questions.map((q) => (
             <li key={q.id}>
-              <button>{q.question}</button>
-              <p className={classes.answer}>{q.answer}</p>
+              <button
+                onClick={() => showAnswerHandler(q.id)}
+                className={answerToShown === q.id ? classes.visible : ""}
+              >
+                {q.question}
+              </button>
+              <p
+                className={`${classes.answer} ${
+                  answerToShown === q.id ? classes.visible : ""
+                }`}
+              >
+                {q.answer}
+              </p>
             </li>
           ))}
         </ul>

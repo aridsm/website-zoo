@@ -29,6 +29,7 @@
 }
 .txt {
   margin-bottom: 2rem;
+  max-width: 450px;
 }
 
 @media (max-width: 930px) {
