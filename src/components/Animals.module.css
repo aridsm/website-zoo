@@ -9,7 +9,9 @@
 .content {
   order: 2;
 }
-
+.slider > ul {
+  left: calc(-100% + 5rem);
+}
 .content p {
   max-width: 450px;
 }
