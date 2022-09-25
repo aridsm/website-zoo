@@ -61,6 +61,10 @@
   .itemAnimal img {
     height: 180px;
   }
+
+  .slider > ul {
+    left: 0;
+  }
 }
 
 @media (max-width: 500px) {
