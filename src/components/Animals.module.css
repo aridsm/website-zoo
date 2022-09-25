@@ -10,7 +10,7 @@
   order: 2;
 }
 .slider > ul {
-  left: calc(-100% + 5rem);
+  left: 0;
 }
 .content p {
   max-width: 450px;
@@ -60,10 +60,6 @@
   }
   .itemAnimal img {
     height: 180px;
-  }
-
-  .slider > ul {
-    left: 0;
   }
 }
 
