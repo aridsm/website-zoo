@@ -9,9 +9,6 @@
 .content {
   order: 2;
 }
-.slider > ul {
-  left: 0;
-}
 .content p {
   max-width: 450px;
 }
